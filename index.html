@@ -162,7 +162,7 @@
       border-radius: 14px;
       background:
         radial-gradient(circle at 50% 45%, rgba(255,255,255,0.07), transparent 48%),
-        linear-gradient(180deg, #0d6d46, #08452c);
+        linear-gradient(180deg, #0A5C3B, #0A5C3B);
       border: 1px solid rgba(201, 168, 76, 0.45);
       display: grid;
       place-items: center;
@@ -288,11 +288,11 @@
     .btn:hover { transform: translateY(-1px); }
     .btn-primary {
       background: var(--color-gold);
-      color: #1f1707;
+      color: #1A1A1A;
       box-shadow: 0 10px 25px rgba(201, 168, 76, 0.24);
     }
     .btn-primary:hover,
-    .btn-primary:focus-visible { background: #d7b55a; text-decoration: none; }
+    .btn-primary:focus-visible { background: #C9A84C; text-decoration: none; }
     .btn-secondary {
       border-color: rgba(201, 168, 76, 0.7);
       color: #fff;
@@ -314,7 +314,7 @@
         linear-gradient(rgba(0,50,30,0.55), rgba(0,50,30,0.72)),
         radial-gradient(circle at top left, rgba(201,168,76,0.18), transparent 32%),
         radial-gradient(circle at bottom right, rgba(201,168,76,0.12), transparent 36%),
-        linear-gradient(140deg, #0a5c3b 0%, #0a4f36 46%, #073827 100%);
+        linear-gradient(140deg, #0A5C3B 0%, #0A5C3B 46%, #0A5C3B 100%);
       overflow: clip;
     }
     .hero::before,
@@ -448,7 +448,7 @@
     footer p { margin: 0; color: var(--color-muted); }
     .usp-card p { color: rgba(250, 249, 245, 0.85); }
 
-    .section-muted { background: linear-gradient(180deg, #fff, #fbf8ef); }
+    .section-muted { background: linear-gradient(180deg, #fff, #FAF9F5); }
     .rooms-grid,
     .amenities-grid,
     .dining-grid,
@@ -479,7 +479,7 @@
       background:
         linear-gradient(180deg, rgba(10,92,59,0.04), rgba(0,0,0,0.36)),
         radial-gradient(circle at 20% 20%, rgba(245,230,192,0.28), transparent 18%),
-        linear-gradient(135deg, #f0eadb, #cabba2 34%, #7f8d7c 72%, #365646);
+        linear-gradient(135deg, #FAF9F5, #F5E6C0 34%, #0A5C3B 72%, #0A5C3B);
     }
     .room-visual::after {
       content: "";
@@ -537,7 +537,7 @@
     }
     .amenity-card p { font-size: 0.96rem; }
     .dining-card {
-      background: linear-gradient(180deg, #fff, #fefbf4);
+      background: linear-gradient(180deg, #fff, #FAF9F5);
     }
     .meta-line {
       display: inline-flex;
@@ -557,7 +557,7 @@
     .booking-panel.highlight {
       background:
         radial-gradient(circle at top right, rgba(201,168,76,0.14), transparent 28%),
-        linear-gradient(180deg, #fff, #fbf7ec);
+        linear-gradient(180deg, #fff, #FAF9F5);
     }
     .trust-list {
       list-style: none;
@@ -630,7 +630,7 @@
       display: none;
       margin-top: 1rem;
       border: 1px solid rgba(10, 92, 59, 0.14);
-      background: linear-gradient(180deg, #fefefe, #f4f7f5);
+      background: linear-gradient(180deg, #FAF9F5, #FAF9F5);
     }
     .summary-card.show { display: block; }
     .summary-card header {
@@ -689,7 +689,7 @@
     }
 
     footer {
-      background: #083e2a;
+      background: #0A5C3B;
       color: rgba(250, 249, 245, 0.82);
       padding: 1.1rem 0 1.5rem;
       border-top: 1px solid rgba(245, 230, 192, 0.14);
@@ -760,6 +760,142 @@
       .usp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
 
+
+    /* Task overrides */
+    .header {
+      background: #0A5C3B;
+      backdrop-filter: none;
+    }
+    .brand img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: 52px;
+    }
+    .btn-secondary {
+      border-color: #C9A84C;
+      color: #C9A84C;
+      background: transparent;
+    }
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+      background: rgba(201, 168, 76, 0.12);
+      color: #FAF9F5;
+    }
+    .call-btn {
+      min-height: 44px;
+      padding-inline: 0.95rem;
+    }
+    .call-btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    .hero {
+      background:
+        linear-gradient(rgba(10,92,59,0.66), rgba(10,92,59,0.82)),
+        radial-gradient(circle at top left, rgba(201,168,76,0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(201,168,76,0.12), transparent 36%),
+        linear-gradient(140deg, #0A5C3B 0%, #0A5C3B 100%);
+    }
+    .room-card {
+      display: flex;
+      flex-direction: column;
+      border-top: 3px solid #C9A84C;
+      overflow: hidden;
+      box-shadow: 0 14px 30px rgba(10,92,59,0.12);
+    }
+    .room-visual {
+      min-height: 0;
+      padding: 0;
+      background: #FAF9F5;
+      display: block;
+    }
+    .room-visual::after {
+      display: none;
+    }
+    .room-visual img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #FAF9F5;
+    }
+    .room-badge {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      background: rgba(10,92,59,0.88);
+    }
+    .room-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      height: 100%;
+    }
+    .room-body p {
+      display: none;
+    }
+    .room-meta {
+      margin: 0;
+      color: #1A1A1A;
+    }
+    .room-card .tick {
+      color: #0A5C3B;
+    }
+    .btn-room {
+      margin-top: auto;
+      min-height: 44px;
+      padding: 0.8rem 1.2rem;
+      background: #0A5C3B;
+      color: #FAF9F5;
+      border: 1px solid #0A5C3B;
+      box-shadow: none;
+    }
+    .btn-room:hover,
+    .btn-room:focus-visible {
+      background: #0A5C3B;
+      color: #FAF9F5;
+      text-decoration: none;
+    }
+    footer {
+      background: #0A5C3B;
+      color: rgba(250, 249, 245, 0.9);
+    }
+    .footer-phone-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 44px;
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
+      background: #C9A84C;
+      color: #1A1A1A;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .footer-phone-btn:hover,
+    .footer-phone-btn:focus-visible {
+      text-decoration: none;
+      background: #C9A84C;
+      color: #1A1A1A;
+    }
+    @media (max-width: 479.98px) {
+      .call-btn {
+        min-width: 44px;
+        padding-inline: 0.8rem;
+      }
+      .call-btn .call-text {
+        display: none;
+      }
+    }
+    @media (min-width: 480px) {
+      .footer-phone-btn {
+        width: auto;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after {
@@ -776,11 +912,7 @@
   <header class="header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="RoyalSon Hotel &amp; Restaurants home">
-        <span class="brand-mark" aria-hidden="true"><i>♛</i><span>RS</span></span>
-        <span class="brand-copy">
-          <strong>ROYALSON</strong>
-          <small>Hotel &amp; Restaurants • Taxila</small>
-        </span>
+        <img src="assets/logo.png" height="52" alt="RoyalSon Hotel &amp; Restaurants Taxila" loading="eager">
       </a>
 
       <div class="nav-wrap" id="mobileNav">
@@ -797,7 +929,10 @@
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle navigation">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
         </button>
-        <a class="btn btn-secondary" href="tel:+92514548400">📞 Call Now</a>
+        <a class="btn btn-secondary call-btn" href="tel:+92514548400" aria-label="Call RoyalSon Hotel and Restaurants Taxila at +92 51 4548400">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.61 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.27a2 2 0 0 1 2.11-.45c.84.28 1.72.49 2.62.61A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="call-text">+92 51 4548400</span>
+        </a>
         <a class="btn btn-primary" href="#booking">Book Now</a>
       </div>
     </div>
@@ -861,44 +996,59 @@
 
         <div class="rooms-grid">
           <article class="room-card">
-            <div class="room-visual"><span class="room-badge">Room preview • calm and private</span></div>
+            <div class="room-visual">
+              <img src="assets/room-standard.jpg" alt="Standard Room at RoyalSon Hotel &amp; Restaurants Taxila" loading="lazy">
+              <span class="room-badge">Standard Room</span>
+            </div>
             <div class="room-body">
-              <h3>Executive Double</h3>
-              <p>A polished option for couples, solo professionals, or guests who want a comfortable stop near Taxila’s heritage corridor.</p>
+              <h3>Standard Room</h3>
               <ul class="room-meta">
-                <li><span class="tick">✓</span><span>Comfortable double bed setup with workspace-friendly layout</span></li>
-                <li><span class="tick">✓</span><span>Attached bathroom, Wi-Fi access, and TV-ready stay essentials</span></li>
-                <li><span class="tick">✓</span><span><strong>Contact for rates</strong> and availability confirmation</span></li>
+                <li><span class="tick">✓</span><span>Free WiFi</span></li>
+                <li><span class="tick">✓</span><span>Air Conditioning</span></li>
+                <li><span class="tick">✓</span><span>LED TV</span></li>
+                <li><span class="tick">✓</span><span>Daily Breakfast</span></li>
+                <li><span class="tick">✓</span><span>Hot Water</span></li>
               </ul>
-              <a class="btn btn-primary" href="#booking">View Room</a>
+              <a class="btn btn-room" href="tel:+92514548400">Inquire</a>
             </div>
           </article>
 
           <article class="room-card">
-            <div class="room-visual" style="background: linear-gradient(180deg, rgba(10,92,59,0.06), rgba(0,0,0,0.38)), radial-gradient(circle at 80% 20%, rgba(245,230,192,0.26), transparent 16%), linear-gradient(135deg, #efe6d4, #d8c7a8 30%, #8ea7a1 70%, #22493b);"><span class="room-badge">Room preview • family friendly</span></div>
+            <div class="room-visual">
+              <img src="assets/room-deluxe.jpg" alt="Deluxe Room at RoyalSon Hotel &amp; Restaurants Taxila" loading="lazy">
+              <span class="room-badge">Deluxe Room</span>
+            </div>
             <div class="room-body">
-              <h3>Family Room</h3>
-              <p>For visiting families and heritage tourists who need extra flexibility, parking ease, and straightforward value.</p>
+              <h3>Deluxe Room</h3>
               <ul class="room-meta">
-                <li><span class="tick">✓</span><span>Space-conscious arrangement for shared stays</span></li>
-                <li><span class="tick">✓</span><span>Breakfast and parking benefits reinforce value</span></li>
-                <li><span class="tick">✓</span><span><strong>Contact for rates</strong> and preferred occupancy</span></li>
+                <li><span class="tick">✓</span><span>Free WiFi</span></li>
+                <li><span class="tick">✓</span><span>Air Conditioning</span></li>
+                <li><span class="tick">✓</span><span>LED TV</span></li>
+                <li><span class="tick">✓</span><span>Daily Breakfast</span></li>
+                <li><span class="tick">✓</span><span>City View</span></li>
+                <li><span class="tick">✓</span><span>King Bed</span></li>
               </ul>
-              <a class="btn btn-primary" href="#booking">View Room</a>
+              <a class="btn btn-room" href="tel:+92514548400">Inquire</a>
             </div>
           </article>
 
           <article class="room-card">
-            <div class="room-visual" style="background: linear-gradient(180deg, rgba(10,92,59,0.04), rgba(0,0,0,0.4)), radial-gradient(circle at 25% 22%, rgba(245,230,192,0.22), transparent 20%), linear-gradient(135deg, #f2ecde, #c9b69b 34%, #839891 68%, #173f32);"><span class="room-badge">Room preview • quick business stop</span></div>
+            <div class="room-visual">
+              <img src="assets/room-suite.jpg" alt="Family Suite at RoyalSon Hotel &amp; Restaurants Taxila" loading="lazy">
+              <span class="room-badge">Family Suite</span>
+            </div>
             <div class="room-body">
-              <h3>Business Stay</h3>
-              <p>Made for efficient check-ins, direct GT Road access, and a practical overnight experience for working travelers.</p>
+              <h3>Family Suite</h3>
               <ul class="room-meta">
-                <li><span class="tick">✓</span><span>Fast-access stay concept near Taxila routes</span></li>
-                <li><span class="tick">✓</span><span>Ideal for short work trips and transit stops</span></li>
-                <li><span class="tick">✓</span><span><strong>Contact for rates</strong> and corporate inquiries</span></li>
+                <li><span class="tick">✓</span><span>Free WiFi</span></li>
+                <li><span class="tick">✓</span><span>Air Conditioning</span></li>
+                <li><span class="tick">✓</span><span>LED TV</span></li>
+                <li><span class="tick">✓</span><span>Daily Breakfast</span></li>
+                <li><span class="tick">✓</span><span>King Bed</span></li>
+                <li><span class="tick">✓</span><span>Sofa Bed</span></li>
+                <li><span class="tick">✓</span><span>Extra Space</span></li>
               </ul>
-              <a class="btn btn-primary" href="#booking">View Room</a>
+              <a class="btn btn-room" href="tel:+92514548400">Inquire</a>
             </div>
           </article>
         </div>
@@ -957,7 +1107,13 @@
 
         <div class="booking-wrap">
           <article class="booking-panel highlight">
-            
+            <h3>Why this version converts better</h3>
+            <p class="lead">The page keeps the offer clear: heritage access, free breakfast, free parking, and an easy next step.</p>
+            <ul class="trust-list">
+              <li><span class="amenity-icon" aria-hidden="true">1</span><div><strong>Always-visible CTAs</strong><p>Call Now and Book Now remain accessible even on mobile, reducing lost intent.</p></div></li>
+              <li><span class="amenity-icon" aria-hidden="true">2</span><div><strong>Short form only</strong><p>Only essential fields are shown first, keeping friction low for phone-led confirmations.</p></div></li>
+              <li><span class="amenity-icon" aria-hidden="true">3</span><div><strong>Instant summary</strong><p>Guests get a WhatsApp-style reservation summary they can screenshot before calling.</p></div></li>
+            </ul>
           </article>
 
           <article class="booking-panel">
@@ -980,11 +1136,11 @@
                 </div>
                 <div class="field">
                   <label for="guestName">Guest name</label>
-                  <input id="guestName" name="guestName" type="text" autocomplete="name" placeholder="Full name" required />
+                  <input id="guestName" name="guestName" type="text" autocomplete="name" required />
                 </div>
                 <div class="field full">
                   <label for="phone">Phone number</label>
-                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. +92 3XX XXXXXXX" required />
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
                 </div>
               </div>
 
@@ -992,7 +1148,7 @@
                 <summary>Special requests (optional)</summary>
                 <div class="field" style="margin-top:0.5rem;">
                   <label for="requests">Anything the hotel should know</label>
-                  <textarea id="requests" name="requests" placeholder="Early check-in, family needs, transport, room preference, etc."></textarea>
+                  <textarea id="requests" name="requests"></textarea>
                 </div>
               </details>
 
@@ -1079,7 +1235,7 @@
         <a href="#booking">Book Now</a>
         <a href="#contact">Contact</a>
       </nav>
-      <p class="footer-end"><a class="phone-link" href="tel:+92514548400">+92 51 4548400</a></p>
+      <p class="footer-end"><a class="footer-phone-btn" href="tel:+92514548400">+92 51 4548400</a></p>
     </div>
   </footer>
 
